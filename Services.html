@@ -4,27 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Build-Master-Pro</title>
+    <link rel="stylesheet" href="style1.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header class=" header">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto " href="#"></a>
 
-        <div class="header-img">
-            <img src="./ASSETS/img9.png" class="img-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BMP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link " aria-current="page" href="index.html"
+                                style="color: rgb(18, 18, 189);">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="Services.html"
+                                style="color: rgb(18, 18, 189);">Services</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="project.html">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Company</a></li>
+                                <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="engineering_services.html">Engineering Services</a>
+                                </li>
+                                <li><a class="dropdown-item" href="tools&software.html">Tools&Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <a class="btn btn-primary btn-sm border border-primary border-2 pt-0 pb-0" href="https://www.whatsapp.com/"
+                role="button"><img src="asset/home/callicon.png">
+                Call us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
+    </nav>
 
-        <div class="main-content text-center">
+
+    <!-- background-image -->
+    <div class="img-backs img-fluid">
+
+        <div class="main-content2 text-center justify-content-center align-items-center">
             <h1>Our Services</h1>
             <div class="line"></div>
-            <h6 class="home-services">HOME /<span class="text-primary">SERVICES</span></h6>
+            <h6 class="home-services mt-3">HOME /<span class="text-primary"> SERVICES</span></h6>
         </div>
-
-    </header>
+    </div>
 
 
     <section class="about-our-services container-sm">
@@ -293,7 +348,8 @@
         </div>
     </div>
 
-    <footer>
+
+    <!-- <my-footer>
 
         <section class="first">
 
@@ -393,11 +449,139 @@
             </div>
 
         </section>
+    </footer> -->
+
+
+
+    <section id="footer" class="top-space mb-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="first-div">
+                        <h1 class="display-2 ms-3 fh">Get in Touch With Us!</h1>
+                        <p class="text-white ms-4 ">Fill out the form below & we will get back to you as soon as
+                            possible...</p>
+                    </div>
+
+                    <div class="inputs container-xl row justify-content-center align-items-center">
+                        <form>
+                            <div class="mb-3  mt-4 form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Enter Your Name" id="inputpassword1">
+                            </div>
+
+                            <div class="mb-3  form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Enter Your Email" id="inputpassword2">
+                            </div>
+
+                            <div class="mb-3  form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Enter Your Mobile No" id="inputpassword3">
+                            </div>
+
+                            <div class="mb-3  form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Enter Your City Name" id="inputpassword4">
+                            </div>
+
+                            <div class="mb-3  form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Enter Your Address" id="inputpassword4">
+                            </div>
+
+                            <div class="mb-3  form-check">
+                                <input type="password" class="form-control" style="padding: 10px;"
+                                    placeholder="Your Message" id="inputpassword5">
+                            </div>
+
+                            <div class="mb-3  form-check">
+
+                                <select class="form-select" style="padding: 10px;">
+                                    <option>Facebook</option>
+                                    <option>Linkedin</option>
+                                    <option>X-Twitter</option>
+                                </select>
+                            </div>
+
+                            <div class="my-4 ms-4">
+
+                                <button type="button" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-primary ms-3 ps-3 pe-3">Reset</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-11 col-md-6 bgcl text-center mx-auto">
+                    <div class="second-div">
+                        <h5 class="my-4">OUR CONTACT DETAILS</h5>
+                        <h1 class="display-5 py-2">How Can We Help You?</h1>
+                        <p>You can contact us anytime through calls or messages. You can also visit our offices easily
+                            anytime.
+                            We deliver our best professional possibilities to reply to all questions within one day
+                            during the
+                            working days. We are here to help and answer all your valuable questions.</p>
+                        <div class="mt-5 ">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="head-office">
+                        <h4 class="display-5">Head Office</h4>
+                        <p class="pb-3"> Plot # FL-27, Al-Basit Tower, Gulshan-e-Jamal, Faisal Cantt, Opposite Askari –
+                            IV, Karachi,
+                            Sindh,
+                            Pakistan.</p>
+                    </div>
+                    <div class="icons d-flex justify-content-around">
+                        <div class="phone">
+                            <img src="asset/home/phone-call.png" width="40px" height="40px">
+                            <h6>Toll Free </h6>
+                            Landline:<br>
+                            021 3468-150-160
+                        </div>
+                        <div class="email">
+                            <img src="asset/home/email.png" width="40px" height="40px">
+                            <h6>Email</h6>
+                            <p>info@bmp.com</p>
+
+                        </div>
+                        <div class="whatsapp">
+                            <img src="asset/home/whatsapp.png" width="40px" height="40px">
+                            <h6>Whatsapp</h6>
+                            +92 3028255578<br>
+                            +92 3011155760
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer1" class="container-fluid mt-0 pt-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <div class="footer-content text-white text-center">
+                        <p class="pt-1">&copy; Copyright 2024, BMP Group of Companies. All rights reserved.
+                            <br>Developed by: ALIYA AZEEM
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

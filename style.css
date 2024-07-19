@@ -1,185 +1,339 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
 
-
-html,
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* HEADER-WORK */
-.header-img>img {
+nav {
+    height: 50x;
     width: 100%;
-    height: 40vh !important;
-    box-sizing: border-box;
-    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(18, 18, 189);
 }
 
-.main-content {
-    text-align: center;
+.navbar-brand {
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+
+.navbar-brand::before {
+    content: "BMP";
+    color: rgb(18, 18, 189);
+    font-size: 30px;
     position: absolute;
-    top: 0px;
-    left: 33rem;
-    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    font-family: "DM Serif Display", serif;
 }
 
-.main-content>h1 {
+.nav-link,
+.dropdown-item {
+    font-family: "urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 3px solid transparent;
+    transition: 3s ease;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    border-bottom: 3px solid black;
+    color: rgb(18, 18, 189);
+}
+
+.active {
+    border-bottom: 3px solid rgb(18, 18, 189);
+    transition: 3s ease;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/*video background */
+/* .video-container{
+    position: relative;
+    height: 100vh;
+}
+.video{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.video video{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+} */
+.carousel-item img {
+    min-width: 100vw !important;
+    height: 600px !important;
+}
+
+.carousel-inner>.carousel-item {
+    position: relative;
+}
+
+.display-1 {
+    font-family: "DM Serif Display", serif;
+    /* margin-top: 7.5rem; */
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.head-text {
+    font-family: "Urbanist", serif;
     font-weight: 400;
-    font-size: 50px;
-    font-family: "DM Serif Display", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000000;
 }
 
-.main-content>h1,
-h6 {
-    font-family: "urbanist" sans-serif;
-}
-
-/* ABOUT-OUR-SERVICES */
-.about-our-services {
-    text-align: center;
-    margin-top: 90px;
-}
-
-.about-our-services>h6 {
-    margin-bottom: 25px;
-}
-
-.about-our-services>h1 {
-
-    font-family: "DM Serif Display", sans-serif;
-    margin-bottom: 25px;
-
-    font-size: 50px;
-
-}
-
-.about-our-services>div,
-.content1 {
-    line-height: 30px;
-    font-family: "urbanist";
-}
-
-@media screen and (max-width:500px) {
-
-
-
-
-    body {
-        margin: 0px;
+@media only screen and (max-width: 450px) {
+    .btn-sm {
+        display: none;
     }
 
-    .main-content {
-        text-align: center;
-        position: absolute;
-        top: 0px;
-        left: 60px;
-        margin-top: 10px;
-    }
-
-    .header-img>img {
-        width: 125%;
-
-    }
-
-    .main-content>h1 {
-        font-weight: 200;
-        font-size: 40px;
-
-    }
-
-    .about-our-services {
-        width: 100vw !important;
-
+    .display-1 {
+        font-size: 25px;
     }
 
 }
 
+@media only screen and (max-width: 775px) {
 
-@media screen and (max-width:800px) {
-
-
-
-    body {
-        margin: 0px;
+    .sub-heading {
+        font-size: 20px;
     }
 
-    .main-content {
-        text-align: center;
-        position: absolute;
-        left: 150px;
-        top: 0px;
-        margin-top: 10px;
+    .head-text {
+        font-size: 16px;
     }
 
-    .about-our-services {
-        width: 100vw !important;
+    .ceoimg {
+        margin-top: 0 !important;
+    }
 
+    .top-space {
+        margin-top: 0px !important;
     }
 }
 
-@media screen and (min-width:800px) {
-
-
-
-    body {
-        margin: 0px;
-    }
-
-    .main-content {
-        text-align: center;
-        position: absolute;
-        left: 33rem;
-        top: 0px;
-        margin-top: 10px;
-    }
-
-    .about-our-services {
-        width: 100vw !important;
-
-    }
-
+/* introduction section */
+.top-space {
+    margin-top: 70px !important;
 }
 
-/* WHAT CAN WE OFFER */
+.ceoimg {
+    margin-top: 0px;
+}
+
+.display-2,
+.display-3 {
+    font-family: "DM Serif Display", serif;
+}
+
+.display-2 {
+    color: rgb(18, 18, 189);
+}
+
+.lead {
+    font-family: "Urbanist", serif;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.5em;
+}
+
+/* businesses section */
+
+.title {
+    position: relative;
+    color: #636466;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: rgb(18, 18, 189);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+span {
+    background-color: #fff;
+}
+
+i {
+    font-size: 30px;
+    color: rgb(18, 18, 189);
+}
+
+.businessRow {
+    margin-top: 30px;
+    margin-right: -7px;
+    margin-left: -7px;
+}
+
+.businessItem {
+    padding: 7px 7px;
+}
+
+.businessItem .bBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.businessItem .bBox img {
+    width: 100%;
+    height: 230px;
+}
+
+.businessItem .bBox .bHover {
+    position: absolute;
+    bottom: calc(-100% - 20px);
+    background-color: rgba(75, 0, 7, 0.4);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 22px;
+    height: 100%;
+    border-top: 1px solid rgba(244, 28, 47, 0.5);
+    -webkit-transition: bottom .2s linear;
+    -o-transition: bottom .2s linear;
+    transition: .2s linear ease-in-out;
+}
+
+.businessItem .bBox:hover .bHover {
+    bottom: -50%;
+}
+
+.businessSec {
+    margin-bottom: 30px;
+}
+
+/* our values Section */
+.ourCoreValues {
+    background: url(asset/values/ourCoreValue_CSR_bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 0 0 30px;
+    border-top: 4px solid rgb(18, 18, 189);
+    border-bottom: 4px solid rgb(18, 18, 189);
+    overflow: hidden;
+}
+
+.value-container {
+    margin-bottom: 20px;
+}
+
+/* our Partners */
+.handshake-icon {
+    background: url(asset/partners/handshake-icon.png) no-repeat;
+    background-size: 100% auto;
+    width: 40px;
+    height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.partner {
+    font-family: "DM Serif Display", serif;
+}
+
+.blue {
+    color: rgb(18, 18, 189);
+}
+
+/* featured projects */
+.sub-heading {
+    line-height: 0 !important;
+}
+
+.plate {
+    /* color: blue; */
+    background: rgb(18, 18, 189);
+    padding: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.plate:hover {
+    border: 2px solid #000000;
+}
+
+/* WHAT CAN WE OFFER
 .wt-can-we-offer {
     text-align: center;
     margin-top: 10%;
 
-}
-
-.wt-can-we-offer>h1 {
-    font-family: "DM Serif Display", sans-serif;
-    font-size: 50px;
-    margin-bottom: 6%;
-
-}
+} */
 
 
-.img-container {
-    margin-left: 10px;
-    width: 50%;
-    height: 50%;
-
+.card-img-top {
+    /* margin-left: 10px; */
+    width: 150px;
+    height: 150px;
+    padding: 20px;
 }
 
 /* CARDS-WORK */
 .card {
-    margin: 15px;
-    padding: 15px;
+    /* margin: 5px; */
     transition: 0.2s ease-in-out;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card:hover {
-    background-color: rgb(75, 142, 197);
+    background-color: rgb(142, 199, 247);
 
     transition: 0.2s ease-in-out;
     color: white !important;
@@ -187,670 +341,136 @@ h6 {
 
 
 .card-body {
-    width: 20rem;
+    /* width: 20rem;
     height: 15rem;
     position: absolute;
-    line-height: 28px;
-    bottom: 30px !important;
-
+    line-height: 26px;
+    bottom: 30px !important; */
+    padding: 25px;
+    margin-top: -15px;
 }
 
-hgroup {
+.card-title {
     font-weight: 400;
     font-family: "DM Serif Display", sans-serif;
-    margin-bottom: 15px;
-    margin-top: -20px;
+    /* margin-bottom: 15px;
+    margin-top: -20px; */
 }
 
 .card-body>p.card-text {
 
     font-family: "urbanist" sans-serif;
-
-
-}
-
-.home-services {
-    font-family: "urbanist" sans-serif;
-}
-
-/* CAROUSEL-SLIDER */
-
-
-.Testimonial {
-    margin-top: 100px;
-}
-
-.Testimonial>h6 {
-    margin-bottom: 30px;
-    font-family: "urbanist" sans-serif;
-}
-
-.Testimonial>h1 {
-    font-size: 50px;
-    font-weight: 400;
-    font-family: "DM Serif Display", sans-serif;
-    margin-bottom: 40px;
-}
-
-.card-slider {
-    width: 30%;
-    height: 30%;
-    padding: 10px;
-    margin: 15px;
-    color: rgb(255, 255, 255);
-}
-
-.main {
-    margin-left: 15px;
-}
-
-.main>h5 {
-
-    display: inline;
-    margin-top: -20rem !important;
-}
-
-
-article>.card-slider,
-.main {
-    display: inline-block;
-}
-
-
-.main>img {
-    margin-left: 170px;
-    margin-top: -40px;
-}
-
-.main>h5 {
-
-    font-weight: 400;
-    font-family: "DM Serif Display", sans-serif;
-}
-
-.underline {
-    width: 120px;
-    height: 4px;
-    background: rgb(75, 142, 197);
-    margin-top: 10px;
-    border-radius: 5px;
-
-}
-
-.card-slider {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    margin: 15px;
-    margin-bottom: 50px;
-    padding: 15px;
-    color: black;
-    font-weight: 400;
-    font-family: "urbanist" sans-serif;
-}
-
-.card-slider:hover {
-    background-color: rgb(75, 142, 197);
-    transition: 0.2s ease-in-out;
-    color: white !important;
-}
-
-.underline:hover {
-    background: black;
-}
-
-
-
-.carousel-item {
-    flex-direction: column;
-    flex-wrap: wrap;
-    display: flex;
-    display: block;
-}
-
-#carouselExample {
-    margin-bottom: 13%;
-}
-
-
-
-
-@media screen and (max-width:767px) {
-
-    .carousel-slide {
-        height: 60%;
-        display: inline-block;
-
-    }
-
-    .underline {
-        width: 100px;
-        height: 3px;
-
-    }
-
-    .carousel-item {
-        flex-direction: column;
-    }
-
-    .card-slider {
-        width: 80vw !important;
-        height: 45vh !important;
-        border: 1px solid rgb(14, 22, 134);
-        overflow: hidden;
-        padding: 15px;
-        margin-right: 10%;
-        margin: 20px auto;
-        color: black;
-        display: block;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-
-    article>.card-slider,
-    .main {
-        display: block;
-    }
-
-    .main>img {
-
-        margin-bottom: 10px;
-        margin-top: 60px;
-        float: right;
-        width: 50px !important;
-        height: 50px !important;
-    }
-
-}
-
-
-@media screen and (max-width:1078px) {
-
-    .carousel-slide {
-        height: 60%;
-        display: inline-block;
-    }
-
-    .underline {
-        width: 100px;
-        height: 3px;
-    }
-
-    .carousel-item {
-        flex-direction: column;
-    }
-
-    .card-slider {
-        width: 60vw !important;
-        height: 33vh !important;
-        border: 1px solid rgb(14, 22, 134);
-        overflow: hidden;
-        padding: 15px;
-        margin-right: 10%;
-        margin-bottom: -30px;
-        margin: 20px auto;
-        color: black;
-        display: block;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    article>.card-slider,
-    .main {
-        display: block;
-    }
-
-    .main>img {
-        margin-left: 130px;
-        margin-bottom: 30px;
-        margin-top: -40px;
-        float: right;
-        width: 70px;
-        height: 70px;
-
-    }
-
-}
-
-/* FOOTER-WORK */
-
-footer {
-    height: 58rem !important;
-    width: 98.5vw;
-    background: black;
-    box-sizing: border-box !important;
-    background-size: cover !important;
-
-}
-
-.first {
-    height: 85%;
-    width: 45%;
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 75px;
-    padding: 20px;
-}
-
-.second {
-    height: 91%;
-    background: white;
-    width: 43%;
-    display: inline-block;
-    margin-top: 10px !important;
-    padding-top: 12% !important;
-    margin-right: 80px;
-    padding: 20px;
-    text-align: center;
-}
-
-
-.first-div {
-
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-
-.first-div>p {
-    margin: 18px 5px;
-    font-size: 17px;
-}
-
-.first-div>h1 {
-    font-size: 55px;
-    font-family: "DM Serif Display", sans-serif;
-    font-family: "urbanist" sans-serif;
-}
-
-.second-div>h1 {
-
-
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 24px;
-    font-family: "DM Serif Display", sans-serif;
-
-
-
-}
-
-.second-div {
-    margin-top: -20px;
-    padding: 15px;
-    line-height: 23px;
-}
-
-.head-office>h4 {
-
-    font-family: "DM Serif Display", sans-serif;
-    margin: 50px 0px;
-}
-
-.head-office>p {
-    font-family: "urbanist" sans-serif;
-
-}
-
-.icons>.phone,
-.email,
-.whatsapp {
-    display: inline;
-    margin: 5px;
-    margin-top: 25px !important;
-}
-
-.phone,
-.email.whatsapp>h6,
-p {
-    display: inline;
-    margin: 5px;
-}
-
-
-.phone,
-.email,
-.whatsapp>img,
-img,
-img {
-    margin-bottom: 15px;
-}
-
-
-@media screen and (max-width:767px) {
-
-    footer {
-        height: 140rem !important;
-        width: 120vw !important;
-        background: black;
-        box-sizing: border-box !important;
-        background-size: cover !important;
-    }
-
-
-    .first {
-        height: 38%;
-        width: 100vw;
-        background: black;
-        float: none;
-        display: block;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding: 15px;
-    }
-
-    .second {
-        background: white;
-        width: 100vw;
-        height: 53% !important;
-        float: none;
-        display: flex;
-        margin-left: 50px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 0px;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .inpu .icons>.email,
-    .whatsapp,
-    .phone {
-
-        display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .icons {
-        flex-wrap: wrap;
-        height: 30%;
-    }
-
-    .icons>.whatsapp {
-        margin: 20px 45px;
-    }
-
-    .whatsapp {
-        margin-left: 4rem !important;
-    }
-
-    .icons>.email {
-        margin: 20px 35px;
-    }
-
-    .icons>.phone {
-        margin: 20px 45px;
-    }
-
-    .first-div>p {
-        margin-top: 5px;
-    }
-
-
-    .inputs {
-        width: 22rem !important;
-    }
-
-    .second-div {
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width:1078px) {
-
-    footer {
-        /* height: 100%; */
-        height: 140rem !important;
-        width: 120vw;
-        box-sizing: border-box !important;
-        background-size: cover !important;
-    }
-
-    /* .inputs {
-        width: 50rem;
-    } */
-
-    .first {
-        width: 70%;
-        background-color: black;
-        float: none;
-        display: block;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding: 15px;
-    }
-
-    .second {
-        height: 60% !important;
-        background: white;
-        width: 80vw;
-        display: flex;
-        float: none;
-        display: block;
-        margin-top: 0px;
-        margin-right: 0px;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .icons>.email,
-    .whatsapp,
-    .phone {
-
-        display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .icons {
-        flex-wrap: wrap;
-        height: 30%;
-    }
-
-    .icons>.whatsapp {
-        margin: 20px 40px;
-    }
-
-    .whatsapp {
-        margin-left: 4rem !important;
-    }
-
-    .icons>.email {
-        margin: 20px 35px;
-    }
-
-    .icons>.phone {
-        margin: 20px 45px;
-    }
-
-    .first-div {
-        margin-left: 10%;
-    }
-
-    .second-div {
-        margin-top: 0px;
-    }
-}
-
-/* PROJECT WORK */
-
-.new-class-project-back {
-    background: rgb(248, 248, 248);
-}
-
-/*.... */
-
-.header-img1>img {
-
-    box-sizing: border-box;
-    width: 100%;
-    background-attachment: fixed;
-
-
-}
-
-.main-content1 {
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    left: 33rem;
-    margin-top: 50px;
-    font-family: "DM Serif Display", sans-serif;
-}
-
-.main-content1>h1 {
-    font-weight: 400;
-    font-size: 50px;
-    letter-spacing: 2px;
-    font-family: "DM Serif Display", sans-serif;
-}
-
-.main-content1>h6 {
-    font-family: "urbanist" sans-serif !important;
-    margin-bottom: 20px;
     font-size: 18px;
 }
 
-/* media querry */
+/* about page */
 
-@media screen and (max-width:500px) {
-
-
-
-
-    body {
-        margin: 0px;
-    }
-
-    .main-content1 {
-        text-align: center;
-        position: absolute;
-        top: 0px;
-        left: 60px;
-        margin-top: 20px;
-    }
-
-
-    .main-content1>h1 {
-        font-weight: 200;
-        font-size: 40px;
-
-    }
+.top-space {
+    margin-top: 70px !important;
 }
 
-
-@media screen and (max-width:800px) {
-
-
-
-    body {
-        margin: 0px;
-    }
-
-    .main-content1 {
-        text-align: center;
-        position: absolute;
-        left: 150px;
-        top: 0px;
-        margin-top: 50px;
-    }
-
-
+.seprator_top,
+.separator_bottom {
+    background: url(asset/about/seprator_top.jpg) top center no-repeat;
+    height: 13px;
+    width: 100%;
+    background-size: contain;
+    display: block;
+    /* margin: 60px 0 30px; */
 }
 
-@media screen and (min-width:800px) {
+.text-justify {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
+.vision {
+    color: #636466;
+    font-size: 18px;
+}
 
+.vision h1 {
+    margin-bottom: 30px;
+}
 
-    body {
-        margin: 0px;
+.title {
+    position: relative;
+    color: #636466;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.title span {
+    background-color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+
+@media only screen and (min-width: 767px) {
+    .col-md-offset-1 {
+        margin-left: 8%;
     }
 
-    .main-content1 {
-        text-align: center;
-        position: absolute;
-        left: 33rem;
-        top: 0px;
-        margin-top: 80px;
+    .col-md-offset-2 {
+        margin-left: 16%;
     }
 
 }
 
-.categories {
-
-    margin-top: 5%;
-    font-weight: 650;
-    font-family: "urbanist" sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.5px;
+/* footer section */
+#footer {
+    height: 100% !important;
+    width: 98vw;
+    background: black;
+    margin-left: 10px;
+    background-size: cover !important;
 }
 
-/* card */
-
-.card-bodys {
-    width: 20rem;
-    height: 16rem !important;
-    position: absolute;
-    line-height: 28px;
-    bottom: 30px !important;
-    padding: 10px 10px;
+.bgcl {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.card-bodys>hgroup {
+.second-div {
+    padding: 10px;
+    line-height: 23px;
+}
+
+.display-5 {
+    font-family: "Playfair Display", serif;
+    color: rgb(18, 18, 189);
     font-weight: 400;
-    font-family: "DM Serif Display", sans-serif;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    text-shadow: 2px 2px 6px #000000;
 }
 
-.card-bodys>p.card-text {
-
-    font-family: "urbanist" sans-serif;
+.first-div .fh {
+    text-shadow: 2px 2px 6px gray;
 }
 
-/* Carousel */
-
-.carousel2nd {
-    background-color: deeppink;
-    height: 100vh
+#footer1 {
+    background-color: rgb(18, 18, 189);
+    height: 70px;
 }
 
-.header1 {
-    margin-bottom: 20px;
+@media only screen and (max-width: 768px) {
+    #footer1 {
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    #footer {
+        margin-left: 5px;
+    }
 }
 
-.head-office2 {
-
-    font-family: "urbanist" sans-serif;
-}
-
-.plot {
-    font-family: "urbanist" sans-serif;
-    font-weight: 250px;
-}
-
-.site {
-    font-size: 50px;
-    font-family: "DM Serif Display", sans-serif;
-    margin-bottom: 20px;
-}
-
-.contact-section {
-    margin-top: 70px;
-    background: #ece9e9;
-    margin-bottom: 50px;
-    width: 90%;
-    padding: 20px;
-}
-
-.mysection>h4 {
-    font-family: "DM Serif Display", sans-serif;
-    font-weight: 400px;
-}
-
-.hOver:hover {
-    color: white;
-    background-color: rgb(75, 142, 197);
-    transition: 0.2s ease-in-out;
-    border-radius: 10px;
+@media only screen and (max-width: 418px) {
+    #footer1 {
+        height: 80px;
+    }
 
 }
