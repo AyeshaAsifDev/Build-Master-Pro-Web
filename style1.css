@@ -98,8 +98,7 @@ body {
 }
 
 .card:hover {
-    background-color: rgb(75, 142, 197);
-
+    background-color: rgb(25, 136, 227);
     transition: 0.2s ease-in-out;
     color: white !important;
 }
@@ -190,7 +189,7 @@ article>.card-slider,
 .underline {
     width: 120px;
     height: 4px;
-    background: rgb(75, 142, 197);
+    background: rgb(25, 136, 227);
     margin-top: 10px;
     border-radius: 5px;
 
@@ -207,7 +206,7 @@ article>.card-slider,
 }
 
 .card-slider:hover {
-    background-color: rgb(75, 142, 197);
+    background-color: rgb(25, 136, 227);
     transition: 0.2s ease-in-out;
     color: white !important;
 }
@@ -258,7 +257,7 @@ article>.card-slider,
     .card-slider {
         width: 80vw !important;
         height: 45vh !important;
-        border: 1px solid rgb(14, 22, 134);
+        border: 1px solid rgb(25, 136, 227);
         overflow: hidden;
         padding: 15px;
         margin-right: 10%;
@@ -312,7 +311,7 @@ article>.card-slider,
     .card-slider {
         width: 60vw !important;
         height: 33vh !important;
-        border: 1px solid rgb(14, 22, 134);
+        border: 1px solid rgb(25, 136, 227);
         overflow: hidden;
         padding: 15px;
         margin-right: 10%;
@@ -798,7 +797,7 @@ nav {
     height: 50x;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    border-bottom: 3px solid rgb(18, 18, 189);
+    border-bottom: 3px solid rgb(25, 136, 227);
 }
 
 .navbar-brand {
@@ -813,7 +812,7 @@ nav {
 
 .navbar-brand::before {
     content: "BMP";
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -835,11 +834,11 @@ nav {
 .nav-link:hover,
 .dropdown-item:hover {
     border-bottom: 3px solid black;
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
 }
 
 .active {
-    border-bottom: 3px solid rgb(18, 18, 189);
+    border-bottom: 3px solid rgb(25, 136, 227);
     transition: 3s ease;
 }
 
@@ -883,20 +882,20 @@ nav {
 
 .display-5 {
     font-family: "Playfair Display", serif;
-    color: rgb(5, 162, 235);
+    color: rgb(25, 136, 227);
     font-weight: 400;
     /* text-shadow: 2px 2px 6px #000000; */
 }
 
 .first-div .fh {
     /* text-shadow: 2px 2px 6px gray; */
-    color: rgb(0, 153, 255);
+    color: rgb(25, 136, 227);
     font-size: 65px !important;
     font-weight: 600;
 }
 
 #footer1 {
-    background-color: rgb(18, 18, 189);
+    background-color: rgb(25, 136, 227);
     height: 70px;
 }
 

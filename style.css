@@ -12,7 +12,7 @@ nav {
     height: 50x;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    border-bottom: 3px solid rgb(18, 18, 189);
+    border-bottom: 3px solid rgb(25, 136, 227);
 }
 
 .navbar-brand {
@@ -27,7 +27,7 @@ nav {
 
 .navbar-brand::before {
     content: "BMP";
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -49,11 +49,11 @@ nav {
 .nav-link:hover,
 .dropdown-item:hover {
     border-bottom: 3px solid black;
-    color: rgb(18, 18, 189);
+    color:rgb(25, 136, 227);
 }
 
 .active {
-    border-bottom: 3px solid rgb(18, 18, 189);
+    border-bottom: 3px solid rgb(25, 136, 227);
     transition: 3s ease;
 }
 
@@ -170,7 +170,7 @@ nav {
 }
 
 .display-2 {
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
 }
 
 .lead {
@@ -200,7 +200,7 @@ h1 {
     content: '';
     position: absolute;
     height: 2px;
-    background-color: rgb(18, 18, 189);
+    background-color: rgb(25, 136, 227);
     left: 0;
     right: 0;
     top: 0;
@@ -215,7 +215,7 @@ span {
 
 i {
     font-size: 30px;
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
 }
 
 .businessRow {
@@ -265,8 +265,8 @@ i {
     background: url(asset/values/ourCoreValue_CSR_bg.jpg) center center no-repeat;
     background-size: cover;
     padding: 0 0 30px;
-    border-top: 4px solid rgb(18, 18, 189);
-    border-bottom: 4px solid rgb(18, 18, 189);
+    border-top: 4px solid rgb(25, 136, 227);
+    border-bottom: 4px solid rgb(25, 136, 227);
     overflow: hidden;
 }
 
@@ -289,7 +289,7 @@ i {
 }
 
 .blue {
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
 }
 
 /* featured projects */
@@ -299,7 +299,7 @@ i {
 
 .plate {
     /* color: blue; */
-    background: rgb(18, 18, 189);
+    background: rgb(25, 136, 227);
     padding: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -443,17 +443,17 @@ h1 {
 
 .display-5 {
     font-family: "Playfair Display", serif;
-    color: rgb(18, 18, 189);
+    color: rgb(25, 136, 227);
     font-weight: 400;
-    text-shadow: 2px 2px 6px #000000;
+    /* text-shadow: 2px 2px 6px #000000; */
 }
 
 .first-div .fh {
-    text-shadow: 2px 2px 6px gray;
+    /* text-shadow: 2px 2px 6px gray; */
 }
 
 #footer1 {
-    background-color: rgb(18, 18, 189);
+    background-color: rgb(25, 136, 227);
     height: 70px;
 }
 
